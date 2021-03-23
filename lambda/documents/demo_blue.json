@@ -1,0 +1,95 @@
+{
+  "type": "APL",
+  "version": "1.5",
+  "settings": {},
+  "theme": "dark",
+  "background": "darkblue",
+  "import": [
+    {
+      "name": "alexa-layouts",
+      "version": "1.2.0"
+    }
+  ],
+  "mainTemplate": {
+    "parameters": [
+      "payload"
+    ],
+    "items": [
+      {
+        "type": "Container",
+        "items": [
+          {
+            "type": "Text",
+            "textAlign": "center",
+            "text": "Welcome to our demo!",
+            "paddingTop": "17vh",
+            "paddingBottom": "5vh",
+            "height": "32dp",
+            "width": "100vw",
+            "fontSize": "10vh"
+          },
+          {
+            "type": "Text",
+            "textAlign": "center",
+            "text": "Which demo would you like to try? Cheese maybe?",
+            "paddingTop": "7vh",
+            "paddingBottom": "5vh",
+            "height": "32dp",
+            "width": "100vw",
+            "fontSize": "6vh"
+          },
+          {
+            "type": "Container",
+            "direction": "row",
+            "wrap": "wrap",
+            "width": "100%",
+            "paddingTop": "12vh",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "items": [
+              {
+                "type": "AlexaButton",
+                "buttonText": "Cheese Demo",
+                "accessibilityLabel": "Cheese Demo",
+                "buttonStyle": "contained",
+                "paddingLeft": "8vw",
+                "paddingRight": "8vw",
+                "id": "cheeseButton",
+                "primaryAction": [
+                  {
+                    "type": "SendEvent",
+                    "arguments": [
+                      "cheese"
+                    ]
+                  },
+                  {
+                    "type": "SetValue",
+                    "componentId": "cheeseButton",
+                    "property": "buttonText",
+                    "value": "Cheese Selected"
+                  },
+                  {
+                    "type": "SetValue",
+                    "componentId": "listButton",
+                    "property": "disabled",
+                    "value": "true"
+                  },
+                  {
+                    "type": "SetValue",
+                    "componentId": "cheeseButton",
+                    "property": "buttonStyle",
+                    "value": "ingress"
+                  }
+                ]              
+              }
+            ]
+          }
+        ],
+        "height": "100%",
+        "width": "100%",
+        "direction": "column",
+        "wrap": "noWrap"
+      }
+    ]
+  }
+}

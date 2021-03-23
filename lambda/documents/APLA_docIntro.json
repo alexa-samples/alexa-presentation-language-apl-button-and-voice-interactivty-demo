@@ -1,0 +1,17 @@
+{
+  "type": "APLA",
+  "version": "0.9",
+  "description": "This document demonstrates key components used to create audio responses.",
+  "compositions": {},
+  "resources": [],
+  "mainTemplate": {
+    "parameters": [
+      "payload"
+    ],
+    "item": {
+          "description": "This allows us to add a spoken item that is not a text item in the APL document.",
+          "type": "Speech",
+          "content": "${payload.demo.properties.bodyText}"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "action demo",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "demoTypeIntent",
+          "slots": [
+            {
+              "name": "dtype",
+              "type": "demoType"
+            }
+          ],
+          "samples": [
+            "demo {dtype}",
+            "show me the {dtype}",
+            "the {dtype} demo",
+            "{dtype} demo",
+            "{dtype}",
+            "Let\u0027s try the {dtype}"
+          ]
+        },
+        {
+          "name": "nextBackIntent",
+          "slots": [
+            {
+              "name": "direction",
+              "type": "nextback"
+            }
+          ],
+          "samples": [
+            "move {direction}",
+            "{direction} button",
+            "{direction} cheese",
+            "{direction}",
+            "go {direction}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cheese"
+              }
+            }
+          ],
+          "name": "demoType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "back",
+                "synonyms": [
+                  "last",
+                  "previous"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "next",
+                "synonyms": [
+                  "ahead",
+                  "forward"
+                ]
+              }
+            }
+          ],
+          "name": "nextback"
+        }
+      ]
+    }
+  },
+  "version": "9"
+}

@@ -1,0 +1,25 @@
+{
+  "type": "APL",
+  "version": "1.5",
+  "settings": {},
+  "theme": "dark",
+  "import": [
+    {
+      "name": "alexa-layouts",
+      "version": "1.2.0"
+    }
+  ],
+  "mainTemplate": {
+    "parameters": [
+      "payload"
+    ],
+    "item": [
+      {
+        "type": "AlexaHeadline",
+        "id": "CheeseHeadline",
+        "primaryText": "${payload.myData.Title}",
+        "secondaryText": "${payload.myData.Subtitle}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+    "type": "APL",
+    "version": "1.5",
+    "settings": {},
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.2.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "onMount":[],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "AlexaDetail",
+                "id": "mainScreen",
+                "detailType": "generic",
+                "detailImageAlignment": "right",
+                "headerTitle": "The Happy Cheese Plate",
+                "headerSubtitle": "Pairing wines, cheeses, nuts, and fruit",
+                "imageBlurredBackground": true,
+                "imageAspectRatio": "square",
+                "imageSource": "${payload.demo.properties.imageSource}",
+                "imageCaption": "${payload.demo.properties.imageCaption}",
+                "bodyText": "${payload.demo.properties.bodyText}",
+                "primaryText": "Cheese Info",
+                "button1Text": "< Back",
+                "button1PrimaryAction": [
+                    {
+                        "type": "SendEvent",
+                        "arguments": [
+                            "cheeseback",
+                            "back"
+                        ]
+                    }
+                ],
+                "button2Text": "Next >",
+                "button2PrimaryAction": [
+                    {
+                        "type": "SendEvent",
+                        "arguments": [
+                            "cheesenext",
+                            "next"
+                        ]
+                    }
+                ]
+            }
+
+        ]
+}
+}

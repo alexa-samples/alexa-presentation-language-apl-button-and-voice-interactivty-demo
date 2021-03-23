@@ -1,0 +1,17 @@
+[
+    {
+        "bodyText":"Gouda is a mild-flavored, yellow cow's-milk cheese originating from the Netherlands.",
+        "imageSource": "https://d2o906d8ln7ui1.cloudfront.net/images/details_bt3.png",
+        "imageCaption": "It's all Gouda!"
+    },
+    {
+        "bodyText":"Brie, a soft, buttery cheese from the Brie region of France, was once used to pay tribute to the King.",
+        "imageSource": "https://d3j5530a0cofat.cloudfront.net/brie-cheese.jpg",
+        "imageCaption": "Brie freely!"
+    },
+    {
+        "bodyText":"Flocks of feral sheep roam near the Cheddar Gorge caves from which this orange cheese gets its name.",
+        "imageSource": "https://d3j5530a0cofat.cloudfront.net/cheddar-cheese.jpg",
+        "imageCaption": "What's better than Cheddar?"
+    }
+]
