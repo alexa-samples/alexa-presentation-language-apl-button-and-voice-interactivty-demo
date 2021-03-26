@@ -23,7 +23,7 @@ Additional Resources
 ### Community
 
 -  [Amazon Developer Forums](https://forums.developer.amazon.com/spaces/165/index.html) : Get help, help others.
--  [Alexa Community Slack](https://alexa.design/slack): Join the discussion in the **#apl** channel.
+
 
 ### Documentation
 
