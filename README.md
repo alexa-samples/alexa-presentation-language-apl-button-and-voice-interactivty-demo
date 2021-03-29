@@ -1,7 +1,7 @@
 Adding interactions to Alexa Presentation Language (APL)
 =========================================
 
-This skill is the one used in our Alexa Tech Talk video: "Adding Interactions to Alexa Presentation Language (APL)".
+This skill is the one used in our Alexa Tech Talk video: ["Build Interactive Visuals with Alexa Presentation Language (APL)"](https://www.youtube.com/watch?v=mSsDotsd4eI).
 
 ## Getting up and running
 
